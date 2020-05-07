@@ -5,7 +5,7 @@ class GoalsContainer extends Component {
   render(){
     return(
       <div>
-        <Add Goal />
+        <AddGoal />
       </div>
     )
   }

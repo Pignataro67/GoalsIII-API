@@ -6,7 +6,8 @@ export default class GoalsList extends Component {
     const { goals }  = this.props; 
 
     const GoalsList = ({ goals }) => (
-        <div>	 
+        <div>	
+            <h3>Your Prespires to Aspire</h3> 
           <ol>	  
           {goals.map((goal) => (
             <li>  

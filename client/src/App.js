@@ -6,6 +6,7 @@ import { Route } from 'react-router-dom';
 import Home from './components/Home';
 import AddGoal from './components/Goals/AddGoal';
 import GoalsContainer from './containers/GoalsContainer';
+import { Button } from 'semantic-ui-react';
 
 class App extends Component {
   render() {	 
@@ -13,7 +14,7 @@ class App extends Component {
     <div className="App">
       <h1>Goals</h1>
       <p>Stay Focused</p>
-      <GoalsContainer />
+      <Button>Click Me</Button>
       <NavBar />
         <div>
           <Route exact path='/' render={Home} />
@@ -21,7 +22,8 @@ class App extends Component {
           <Route exact path='/goals' component={GoalsContainer} />
         </div>
     </div>
-  );
+    );
+  }
 }
 
 export default App;

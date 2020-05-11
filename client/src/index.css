@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.main-header {
+.main-header, .main-content {
   text-align: center;
 }
 

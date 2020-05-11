@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AddGoal from '../components/Goals/AddGoal';
 import GoalsList from '../components/Goals/GoalsList';
+import AddGoal from '../components/Goals/AddGoal';
 
 class GoalsContainer extends Component {
   constructor(){
@@ -21,6 +22,7 @@ class GoalsContainer extends Component {
       <div>
         <AddGoal />
         <GoalsList goals={this.state.goals}/>
+        <AddGoal />
       </div>
     )
   }

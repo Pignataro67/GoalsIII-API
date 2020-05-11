@@ -6,8 +6,7 @@ import Home from './components/Home';
 import AddGoal from './components/Goals/AddGoal';
 import GoalsContainer from './containers/GoalsContainer';
 //Semantic-Ui-Components
-import { Container } from 'semantic-ui-react';
-import { Header } from 'semantic-ui-react';
+import { Container, Header } from 'semantic-ui-react';
 
 class App extends Component {
   render() {	 

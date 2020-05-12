@@ -3,8 +3,12 @@ export default function rootReducer(state = {
   }, action ){
   switch(action.type){
     case 'ADD_GOAL':
-      console.log("hit reducer and first action")
-      break;
+    console.log('adding', action.goal )
+    break;	      debugger
+    return {
+      ...state,
+      goals: [...state.goals, action.goal]
+    }
     default:
       return state;
   }

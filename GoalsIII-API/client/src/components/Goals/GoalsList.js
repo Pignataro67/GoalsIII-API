@@ -11,7 +11,7 @@ export default class GoalsList extends Component {
           <ol>	  
           {goals.map((goal) => (
             <li>  
-              <Goal key={goal.id} aim={goal.aim} goal={goal} strategy={goal.strategy} 
+              <Goal aim={goal.aim} aim={goal.aim} goal={goal} strategy={goal.strategy} 
             category={goal.category} objectives={goal.objectives} />
         </li> ))}
       </ol>

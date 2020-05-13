@@ -1,2 +1,0 @@
-class Objective < ApplicationRecord
-end

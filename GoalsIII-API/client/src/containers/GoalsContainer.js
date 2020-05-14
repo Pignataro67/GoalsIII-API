@@ -9,8 +9,7 @@ class GoalsContainer extends Component {
   render() {
     return (
       <div>
-        <AddGoal />
-        <GoalsList goals={this.props.goals}/>
+        { this.props.goals.length > 0 ?  <GoalsList goals={this.props.goals} /> : null }
         <AddGoal />
       </div>
     )
@@ -19,7 +18,7 @@ class GoalsContainer extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    goals: state.goals
+    goals: state.goals.goals
   }
 }
 

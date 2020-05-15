@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AddGoal from '../components/Goals/AddGoal';
 import GoalsList from '../components/Goals/GoalsList';
-import AddGoal from '../components/Goals/AddGoal';
+import GoalInput from '../components/Goals/GoalInput';
 import { connect } from 'react-redux';
 
 class GoalsContainer extends Component {
@@ -9,8 +9,8 @@ class GoalsContainer extends Component {
   render() {
     return (
       <div>
-        { this.props.goals.length > 0 ?  <GoalsList goals={this.props.goals} /> : null }
-        <AddGoal />
+        <GoalsList goals={this.props.goals} />  <GoalsList goals={this.props.goals} /> 
+        <GoalInput />
       </div>
     )
   }

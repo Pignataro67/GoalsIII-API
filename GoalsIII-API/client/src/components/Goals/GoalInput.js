@@ -23,12 +23,16 @@ class GoalInput extends Component {
   handleOnSubmit = (e) => {
     e.preventDefault();
     this.props.addGoalal(this.state)
+    this.setState({
+      aim: '',
+      category: '',
+      strategy: ''
+    })
   }
 
   render() {
     return (
-        <Form className="new-goal-form" onSubmit={this.handleOnSubmit}>
-
+        <Form className="new-goal-form" onSubmit={(e)=>this.handleOnSubmit(e)}>
         <Form.Field>
 
         <label>Your Aim:</label>

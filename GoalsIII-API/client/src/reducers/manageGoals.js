@@ -4,10 +4,9 @@ export default function goalsReducer(state = {
   switch(action.type){
     case 'ADD_GOAL':
       console.log('adding', action.goal )
-      return {
+    return [
         ...state,
-        goals: [...state.goals, action.goal]
-      }
+        action.goal]
     default:
       console.log("hit default case in reducer")
       return state;

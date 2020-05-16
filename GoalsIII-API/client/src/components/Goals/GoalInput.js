@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Button, Form } from 'semantic-ui-react';
+import { addGoal } from '../../actions/goalsActions';
 
 class GoalInput extends Component {
 
@@ -21,7 +22,7 @@ class GoalInput extends Component {
 
   handleOnSubmit = (e) => {
     e.preventDefault();
-    this.props.dispatch({type: "ADD_GOAL", goal: this.state })
+    this.props.addGoalal(this.state)
   }
 
   render() {
@@ -55,4 +56,4 @@ class GoalInput extends Component {
   }
 }
 
-export default connect()(GoalInput);
+export default connect(null, { addGoal })(GoalInput);
